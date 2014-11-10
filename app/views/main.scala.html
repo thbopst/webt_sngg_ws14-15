@@ -1,0 +1,27 @@
+@()(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Simple Number Guessing Game - Play Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script src=@routes.Assets.at("/jquery/jquery-2.1.1.min.js") type="text/javascript"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" media="screen" href=@routes.Assets.at("bootstrap-3.2.0-dist/css/bootstrap.min.css")>
+    <link rel="stylesheet" media="screen" href=@routes.Assets.at("bootstrap-3.2.0-dist/css/bootstrap-theme.min.css")>
+    <script src=@routes.Assets.at("bootstrap-3.2.0-dist/js/bootstrap.min.js") type="text/javascript"></script>
+
+    <!-- Applikation specific-->
+    <link rel="stylesheet" media="screen" href=@routes.Assets.at("stylesheets/main.css")>
+    <link rel="shortcut icon" type="image/png" href=@routes.Assets.at("images/favicon.png")>
+  </head>
+  <body>
+    @content
+  </body>
+</html>
+
